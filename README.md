@@ -6,13 +6,16 @@
 
 ```mermaid
 flowchart LR
-    Agile[Agile]
-    DevOps[DevOps + CI/CD]
-    Agile --> DevOps
+  Agile[Agile]
+  DevOps[DevOps + CI/CD]
+  Agile --> DevOps
+  DevOps --> people
+  subgraph DevOps 
     people((People))
     process((Process))
     tools((Tools))
     people <--> process <--> tools <--> people
+  end
 ```
 
 ## 課題
